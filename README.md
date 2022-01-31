@@ -4,10 +4,14 @@
 
 ## Использование
 
-создаем объект QueryBuilder
+необходимо подлючить зависимость, создаем объект PDO
+```php
+$pdo = new PDO(...);
+```
 
+создаем объект QueryBuilder
 ```php 
-$query = new QueryBuilder(PDO);
+$query = new QueryBuilder($pdo);
 ```
 получить все элементы
 
