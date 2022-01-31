@@ -11,7 +11,7 @@ $pdo = new PDO(...);
 
 создаем объект QueryBuilder
 ```php 
-$query = new QueryBuilder($pdo);
+$query = new QueryBuilder(PDO $pdo);
 ```
 получить все элементы
 
